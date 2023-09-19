@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/JellyPumps/Herald-s-Hollow/master/icon.png | width=512px)
+<img src="https://raw.githubusercontent.com/JellyPumps/Herald-s-Hollow/master/icon.png" width=512px height=512px>
 
 # Herald's Hollow
 
@@ -17,7 +17,7 @@ Please make sure to update tests as appropriate.
 
 ## Updates
 
-Please refer to (CHANGELOG)[https://github.com/JellyPumps/Herald-s-Hollow/blob/master/CHANGELOG.md]
+Please refer to [CHANGELOG](https://github.com/JellyPumps/Herald-s-Hollow/blob/master/CHANGELOG.md)
 
 ## License
 
