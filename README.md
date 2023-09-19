@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/JellyPumps/Herald-s-Hollow/master/icon.png" width=512px height=512px>
+!()[https://i.postimg.cc/W4vLvjKC/icon-scaled-32x-pngcrushed.png]
 
 # Herald's Hollow
 
