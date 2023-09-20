@@ -4,19 +4,19 @@
 
 Embark on a divine journey as a saintly healer in a never-ending dungeon, ascending and descending its perilous floors with each new in-game day.
 
-## [Project Information]
+## Project Information
 
-### [Releases]
+### Releases
 
-- All versions, including Alpha and future releases, can be found in the "Release's" section of this repository.
+- All versions, including Alpha and future releases, can be found in the "Releases" section of this repository.
 
-### [Distribution]
+### Distribution
 
 - A Flatpak version of the project will available after the game has reached Beta.
 
 - Binaries for the project will be accessible on the itch.io page once it is ready.
 
-### [Supported platforms]
+### Supported platforms
 
 - **Current Supported Platform:** Linux
 
@@ -24,11 +24,11 @@ Embark on a divine journey as a saintly healer in a never-ending dungeon, ascend
 
 - **Potential Support:** MacOS
 
-### [Updates]
+### Updates
 
 - Please refer to [CHANGELOG](https://github.com/JellyPumps/Herald-s-Hollow/blob/master/CHANGELOG.md)
 
-## [Contributing]
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
