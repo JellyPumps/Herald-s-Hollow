@@ -9,18 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Labyrinth floors
+- Weapon affinity
+- Day system
 - Interactable world objects
 - Loot
 - Inventory
 - Levels 2 -> 10
-- Day system
+
+### Unimplemented
+
+- Labyrinth floors
 - Commonly used undead opponents: Zombies, Skeletions, Wraiths
 - Uncommonly used undead opponents: Liches, Specters, Wights, Banshees
 - Rarely used undead opponents: Mournwraights, Death Knights
-- Weapon affinity
 - Spells
-- More...
 
 ## [0.1.0] - 2023-09-19
 
