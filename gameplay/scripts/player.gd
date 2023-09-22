@@ -16,6 +16,7 @@ var walking_audio : Array   = [
 
 # String
 var current_direction : String = "north"
+var affinity : String          = ""
 
 # Objects
 onready var animation_player : AnimationPlayer = $AnimationPlayer
