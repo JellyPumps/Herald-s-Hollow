@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://dn0gla8ju3njk"]
+[gd_scene load_steps=8 format=3 uid="uid://dn0gla8ju3njk"]
 
+[ext_resource type="Script" path="res://utilities/scripts/free_look_camera.gd" id="1_pc24b"]
 [ext_resource type="PackedScene" uid="uid://bj8ntafgdp247" path="res://utilities/scenes/pixal_shader.tscn" id="1_xmpux"]
 [ext_resource type="PackedScene" uid="uid://bywwvhm1vm0jr" path="res://utilities/scenes/edge_detection.tscn" id="2_3j6h8"]
 
@@ -30,6 +31,7 @@ size = Vector3(3.50575, 10.4056, 3.65367)
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.797268, 0.603625, 0, -0.603625, 0.797268, 0, 14.9001, 20.7595)
 environment = SubResource("Environment_lhhqq")
+script = ExtResource("1_pc24b")
 
 [node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.52548, -11.9761)
