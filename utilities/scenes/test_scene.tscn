@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dn0gla8ju3njk"]
+[gd_scene load_steps=7 format=3 uid="uid://dn0gla8ju3njk"]
 
 [ext_resource type="PackedScene" uid="uid://bj8ntafgdp247" path="res://utilities/scenes/pixal_shader.tscn" id="1_xmpux"]
+[ext_resource type="PackedScene" uid="uid://bywwvhm1vm0jr" path="res://utilities/scenes/edge_detection.tscn" id="2_3j6h8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_47bqn"]
 albedo_color = Color(0.776471, 0.67451, 0, 1)
@@ -36,3 +37,5 @@ pixel_size = 0.5
 text = "CHEESE"
 
 [node name="pixel_shader" parent="." instance=ExtResource("1_xmpux")]
+
+[node name="edge_detection" parent="." instance=ExtResource("2_3j6h8")]
