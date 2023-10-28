@@ -28,11 +28,6 @@ size = Vector3(3.50575, 10.4056, 3.65367)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.797268, 0.603625, 0, -0.603625, 0.797268, 0, 14.9001, 20.7595)
-environment = SubResource("Environment_lhhqq")
-script = ExtResource("1_pc24b")
-
 [node name="Label3D" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.52548, -11.9761)
 pixel_size = 0.5
@@ -40,4 +35,11 @@ text = "CHEESE"
 
 [node name="pixel_shader" parent="." instance=ExtResource("1_xmpux")]
 
-[node name="edge_detection" parent="." instance=ExtResource("2_3j6h8")]
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.797268, 0.603625, 0, -0.603625, 0.797268, 0, 14.9001, 20.7595)
+environment = SubResource("Environment_lhhqq")
+script = ExtResource("1_pc24b")
+
+[node name="edge_detection" parent="Camera3D" instance=ExtResource("2_3j6h8")]
+transform = Transform3D(1, 0, 0, 0, 1, -8.9407e-08, 0, 8.9407e-08, 1, 0, -0.0347128, -0.337402)
+skeleton = NodePath("../..")
