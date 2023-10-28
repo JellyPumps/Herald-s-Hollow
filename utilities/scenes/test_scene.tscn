@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://dn0gla8ju3njk"]
+
+[ext_resource type="Script" path="res://utilities/scripts/free_look_camera.gd" id="1_pc24b"]
+[ext_resource type="PackedScene" uid="uid://bj8ntafgdp247" path="res://utilities/scenes/pixal_shader.tscn" id="1_xmpux"]
+[ext_resource type="PackedScene" uid="uid://bywwvhm1vm0jr" path="res://utilities/scenes/edge_detection.tscn" id="2_3j6h8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_47bqn"]
+albedo_color = Color(0.776471, 0.67451, 0, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_oqimr"]
+
+[sub_resource type="Sky" id="Sky_5a26r"]
+sky_material = SubResource("ProceduralSkyMaterial_oqimr")
+
+[sub_resource type="Environment" id="Environment_lhhqq"]
+background_mode = 2
+sky = SubResource("Sky_5a26r")
+
+[node name="test_scene" type="Node3D"]
+
+[node name="plate_this_is_a_plate" type="CSGBox3D" parent="."]
+size = Vector3(13.6363, 0.170309, 12.3285)
+
+[node name="cheese?" type="CSGBox3D" parent="."]
+transform = Transform3D(0.721023, 0, 0.692911, 0, 1, 0, -0.692911, 0, 0.721023, 0, 4.64082, 0)
+material_override = SubResource("StandardMaterial3D_47bqn")
+size = Vector3(3.50575, 10.4056, 3.65367)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.52548, -11.9761)
+pixel_size = 0.5
+text = "CHEESE"
+
+[node name="pixel_shader" parent="." instance=ExtResource("1_xmpux")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.797268, 0.603625, 0, -0.603625, 0.797268, 0, 14.9001, 20.7595)
+environment = SubResource("Environment_lhhqq")
+script = ExtResource("1_pc24b")
+
+[node name="edge_detection" parent="Camera3D" instance=ExtResource("2_3j6h8")]
+transform = Transform3D(1, 0, 0, 0, 1, -8.9407e-08, 0, 8.9407e-08, 1, 0, -0.0347128, -0.337402)
+skeleton = NodePath("../..")
