@@ -1,24 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://bywwvhm1vm0jr"]
 
-[ext_resource type="Shader" path="res://utilities/scripts/edge_outlining.gdshader" id="1_3016u"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_q63sw"]
-render_priority = 0
-shader = ExtResource("1_3016u")
-shader_parameter/edge_color = Color(0, 0, 0, 1)
-shader_parameter/threshold = 0.0
-shader_parameter/blend = 0.01
-shader_parameter/enable_depth_pass = true
-shader_parameter/threshold_depth = 0.0
-shader_parameter/blend_depth = 0.01
-shader_parameter/distance_fade_length = 50.0
-shader_parameter/distance_fade_blend = 20.0
+[ext_resource type="Shader" path="res://utilities/scripts/edge_highlight_and_outline.gdshader" id="1_rrq3e"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_3dhwa"]
-material = SubResource("ShaderMaterial_q63sw")
-flip_faces = true
 size = Vector2(2, 2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7b2uv"]
+render_priority = 0
+shader = ExtResource("1_rrq3e")
+shader_parameter/shadows_enabled = true
+shader_parameter/highlights_enabled = true
+shader_parameter/shadow_strength = 0.4
+shader_parameter/highlight_strength = 0.1
+shader_parameter/highlight_color = Color(1, 1, 1, 1)
+shader_parameter/shadow_color = Color(0, 0, 0, 1)
 
 [node name="edge_detection" type="MeshInstance3D"]
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_3dhwa")
+surface_material_override/0 = SubResource("ShaderMaterial_7b2uv")
